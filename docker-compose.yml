@@ -11,7 +11,7 @@ services:
       dockerfile: ./build/php.docker
     container_name: "${PROJECT_NAME}_php"
     working_dir: /var/www
-    command: php -S 0.0.0.0:8080 -t public
+    command: php -S 0.0.0.0:8080
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:

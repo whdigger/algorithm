@@ -33,7 +33,7 @@ class ArrayMaxTest extends TestCase
     }
 
     /**
-     * @dataProvider getFindBestStudentMistakes
+     * @dataProvider getDataFindBestStudentMistakes
      * @param $source
      * @param $expect
      * @return void
@@ -44,7 +44,7 @@ class ArrayMaxTest extends TestCase
         self::assertEquals($expect, $actual);
     }
 
-    public function getFindBestStudentMistakes(): array
+    public function getDataFindBestStudentMistakes(): array
     {
         return [
             [[9, 4, 1, 8, 7, 13, 6, 5], 1],
@@ -56,7 +56,7 @@ class ArrayMaxTest extends TestCase
     }
 
     /**
-     * @dataProvider getFindAverageTime
+     * @dataProvider getDataFindAverageTime
      * @param $source
      * @param $expect
      * @return void
@@ -67,7 +67,7 @@ class ArrayMaxTest extends TestCase
         self::assertEquals($expect, $actual);
     }
 
-    public function getFindAverageTime(): array
+    public function getDataFindAverageTime(): array
     {
         return [
             [[9999], 9999],
@@ -77,7 +77,7 @@ class ArrayMaxTest extends TestCase
     }
 
     /**
-     * @dataProvider getFindMostProfitableClient
+     * @dataProvider getDataFindMostProfitableClient
      * @param $source
      * @param $expect
      * @return void
@@ -88,7 +88,7 @@ class ArrayMaxTest extends TestCase
         self::assertEquals($expect, $actual);
     }
 
-    public function getFindMostProfitableClient(): array
+    public function getDataFindMostProfitableClient(): array
     {
         return [
             [
