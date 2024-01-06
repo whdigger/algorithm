@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Unit\_02;
 
-use _02\Children;
+use App\_02\Children;
 use PHPUnit\Framework\TestCase;
 
 class ChildrenTest extends TestCase
@@ -19,7 +19,7 @@ class ChildrenTest extends TestCase
     {
         $textEditor = new Children($words);
         $textEditor->permutateWords();
-        self::assertEquals($expect, $textEditor->getWords());
+        self::assertEquals($expect, $textEditor->find());
     }
 
     public function getDataBackspace(): array
@@ -39,7 +39,7 @@ class ChildrenTest extends TestCase
                     'гусък',
                     'бакаш',
                     'шбака',
-                ]
+                ],
             ],
         ];
     }
